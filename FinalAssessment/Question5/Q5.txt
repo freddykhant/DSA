@@ -1,0 +1,24 @@
+QUESTION A
+
+The program to handle the connections between movies, actors, and movie roles will be implemented by using and modifying Q5Graph.py.
+First the file reading methods must be implemented, paying detail to the format of the input file and populating the Graph correctly.
+The code will require modification to better identify between movies, actors, and roles as they are separate entities that interact with eachother.
+The later display methods in (c) will rely on the connections between objects (edges between vertices in a graph), output results based on their connections from the weighted matrix.
+
+QUESTION B 
+
+Documentation:
+- GraphNode sub class and constructor added to provide each object class fields, giving unique attributes
+- GraphNode objects have a label, and type 
+- minor modfications due to sub class implementation e.g addVertex now creates GraphNode object rather than storing an int or storing
+- extra functionalities for usability and efficiency - getEdge, hasEdge
+- file reading features, display methods for movies, actors, and roles
+
+QUESTION C 
+
+Documentation:
+- implemented displayActorsMovies, displayMovieActors
+- added size parameter for Graph constructor, allowing size to be intialized upon creating Graph object
+- tested outputs using both the custom sample data file, and provided file
+- implemented displayCostars, no  indentation
+- ****updated*** indentation done

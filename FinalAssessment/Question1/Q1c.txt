@@ -1,0 +1,2 @@
+Quick Sort in the case of Q1c splits and partitions unevenly due to taking a right-sided pivot, and hence would require more function calls leading to a greater recursion depth. This is arguably the worst case of the Quick Sort, with a complexity of O(N^2).
+In contrast, the Merge Sort algorithm in Q1b is consistent in splitting and merging evenly, best case = average case = worst case, requring less function calls. Consistently O(Nlog(N)) time complexity.

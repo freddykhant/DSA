@@ -1,0 +1,27 @@
+QUESTION A
+
+1) Implemented as a graph where the keys are nodes linked to the adjacent character node.
+The space and backspace keys would be linked to the adjacent keys below, and the number keys would be linked to the adjacent keys above.
+This keyboard does not wrap and hence there will be no edges between keys around the border.
+
+2) This keyboard can be implemented similar to a doubly linked list, but still technically a graph due to the presence of the additional keys/functions below the alphabetical keyboard line.
+The alphabetical characters are linked linearly from A to Z, with edges existing between each key to its adjacent, hence making it a similar similar implementation of a doubly linked list.
+But due to presence of the backspace and numeric and symbolic modes, this implementation still classifies as a graph as all alphabetical characters are linked to these keys, and hence edges would also exist between the keys above to the keys below.
+
+QUESTION B
+
+Keyboard (a) is expected to be more efficient in terms of generating the shortest path for a search string, as it is more of a graph implementation compared to Keyboard (b).
+The number of steps for the search algorithm in Keyboard (a) would be shorter as the many edges between adjacent keys allow shorter paths to be created.
+Keyboard (b) however, is more similar to a doubly linked-list implementation than a graph. With edges between adjacent keys along the top row, and the three buttons below. 
+It can also be assumed that the number keyboard and symbol keyboard modes are structured the same way when accessed.
+Due to its linearly structured links, the increased number of steps to traverse the keyboard adheres its effiency. 
+Hence it is expected that the search performance of Keyboard (b) is inferior to that of (a).
+
+Test strings: "azure", "1029", "jane" (Note: ignoring case)
+
+QUESTION C
+
+This feature could have been supported through my approach of the assignment as I mainly used graphs to implement the keyboards.
+To implement this feature, each key node could include an additional field that indicates their state.
+When the state indicates that the key is invisible, the edges between them and adjacent nodes are rearranged to point to the next visible adjacent key.
+Ultimately, this functionality could be included by adding an alternate keyboard mode, that allows for a more optimised data entry.

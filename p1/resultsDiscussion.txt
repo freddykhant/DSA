@@ -1,0 +1,14 @@
+Bubble Sort:
+The Ascending order is the best case as the array is already in order, only one pass needed with no swaps. Hence the time complexity is just O(N). For the Bubble Sort Algorithm, for each array increasing in size, the runtime increases as it takes more time to pass through the array and make comparisons, ALTHOUGH it is done in a singular pass, and no swaps are to be made. 
+The Descending Order is the worst case as the array is completely in reversed sorted order. This means that for every pass, there will be a swap until the array is in sorted order. The time complexity here is O(N^2). It can be seen in the results that as the array size increases the runtime increases marginally as there are an increased number of passes and swaps required. It can also be seen that compared to our best case - ascending order, the runtime on average is longer due to the sheer amount of passes/swaps needed. Whereas in the best case, there is only one pass needed and no swaps, leading to a short runtime. 
+The Nearly Sorted Order is the average case, and the time complexity is given by O(N^2) - same as the worst case. Similarly, the runtime on average compared to the best case is slower. And as array size increases, and the amount of passes and swaps increase, the runtime also increase.
+
+Insertion Sort:
+The Ascending order is the best case here too as the array is already in sorted order. The runtimes are fast and similar to those of Bubble Sort in the ascending order.
+The Descending Order is the worst case. But for Insertion Sort, it is seen that the runtimes for the descending order are faster on average compared to those of Bubble Sort. Although both are slow on reverse-ordered data, Insertion is more efficient, having multiple swaps per pass, allowing it to be slightly faster than Bubble Sort for reverse-ordered data.
+The Nearly Sorted Order is the average case. The Insertion Sort runtime results for a nearly sorted list show a phenomenon where the runtime decreases as the array size increases. This can possibly be explained by the Insertion Sort Algorithm's efficiency for nearly-sorted data, as there are minimal swaps/compares.
+
+Selection Sort:
+For Selection Sort, the best case = average case = worst case.
+This means that ascending, descending, and nearly sorted orders will all have similar average runtimes. The results show to prove this, but it can be seen that the ascending order has the fastest runtimes on average, compared to all others. However though, the descending and nearly sorted orders have very similar runtimes.
+Though the ascending orders are marginally faster, all sorting orders have similar runtimes. This proves the Selection Sort Algorithm's even time complexity among the best, average and worst cases.

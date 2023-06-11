@@ -1,0 +1,10 @@
+The delete operation for the BST in (i) requires the desired node to be found through tree traversal. Once the node has been found, there are 3 cases to consider: node has no children, node has one child, node has two children.
+In the case the node has no children - deleting node 70, the node is simply removed by having its parent - 65 point to null, essentially removing the node from the tree.
+In the second case that the node has one child - node 65, the node is removed by having its parent point directly to the node's child - 70, "adopting the child", and removing pointers to and from the node.
+In the last case where the node has two children - node 60, the node's successor (node 65) - child with highest key, replaces the node to be deleted, and hence rearranging the tree without the deleted node. The second child - 55 becomes the left child of the successor - 65, and its parent is now node 55
+
+The delete operation for the RBT in (ii) is similar to the delete operation of the BST, but a little more complex as Red-Black violations are in place. 
+Through every tree operation, it must be ensured that the RBT remains red-black and balanced. This is achieved by rearranging nodes and switching colors with parents and siblings.
+
+The delete operation for the 234 Tree and B-Tree is a process different from the BST and RBT, as they are trees that involve multiple keys contained in a single node. 
+This involves searching for the node where the key to be deleted exists, deleting the key and balancing the tree by merging and rearranging.
